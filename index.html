@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
     <title>Calculadora</title>
 </head>
-<body>
+<body class="cuerpo">
     <h1>Calculadora sencilla</h1>
+    <br>
     <br>
         <label for="numero1">Número 1</label>
         <input class="text-center" placeholder="Número 1" name="numero1" id="numero1">
         <label for="numero2">Número 2</label>
         <input class="text-center" placeholder="Número 2" name="numero2" id="numero2">
+        <div><span id="Resultado"></span></div>
         <br>
         <br>
         <button onclick="suma()" class="btn btn-dark">Suma</button>
         <button onclick="resta()" class="btn btn-dark">Resta</button>
         <button onclick="multiplicacion()" class="btn btn-dark">Multiplicación</button>
         <button onclick="division()" class="btn btn-dark">División</button>
-    <script src="app.js"></script>
+        <br>
+        <button class="botonClick"> Dame Click</button>
+        <br>
+        <input type="text" id="texto1">
+        <textarea name="" id="area" cols="30" rows="10"></textarea>
+        <button onclick="agregar()">Agregar</button>
+    <script src="index.js"></script>
 </body>
 </html>

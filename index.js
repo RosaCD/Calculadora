@@ -30,4 +30,74 @@
 //     console.log("Hola Rosa");}){
 
 // }
+// let boton = document.querySelector('.botonClick');
 
+// let boton = document.querySelector('.botonClick');
+// boton.addEventListener('click', function(){
+//     console.log("Dimos click al boton");
+//     boton.classList.toggle("morado");
+// });
+
+
+// let boton = document.querySelector('.botonClick');
+
+// boton.addEventListener('mouseover', function(){
+//     console.log("Estamos sobre del boton");
+//     boton.classList.toggle ("morado")
+// });
+
+// boton.addEventListener('mouseout', function(){
+//     console.log("Estamos fuera del boton");
+//     boton.classList.toggle ("morado")
+// });
+
+// // Eventos de teclado
+
+// window.addEventListener("keypress", (e) => {
+//     console.log("Presione una tecla");
+//     // console.log(String.fromCharCode (e.keyCode));
+// });
+// window.addEventListener("keyup", (e) => {
+//     console.log("Deje de presionar una tecla");
+//     // console.log(String.fromCharCode (e.keyCode));
+// });
+// window.addEventListener("load", () => {
+//     console.log("Termine de cargar");
+// })
+function suma() {
+    let numero1 =parseFloat(document.querySelector("#numero1").value);
+    let numero2 = parseFloat(document.querySelector("#numero2").value);
+    let resultado = numero1+numero2;
+    console.log(resultado);
+    let span = document.querySelector("#Resultado");
+    span.innerHTML =resultado;
+
+}
+function resta() {
+    let numero1 =parseFloat(document.querySelector("#numero1").value);
+    let numero2 = parseFloat(document.querySelector("#numero2").value);
+    let resultado = numero1-numero2;
+    console.log(resultado);
+
+}
+function multiplicacion() {
+    let numero1 =parseFloat(document.querySelector("#numero1").value);
+    let numero2 = parseFloat(document.querySelector("#numero2").value);
+    let resultado = numero1*numero2;
+    console.log(resultado);
+
+}
+function division() {
+    let numero1 =parseFloat(document.querySelector("#numero1").value);
+    let numero2 = parseFloat(document.querySelector("#numero2").value);
+    let resultado = numero1/numero2;
+    console.log(resultado);
+
+}
+
+function agregar() {
+    let texto =String(document.querySelector("#texto1").Text);
+    let textoarea =+ texto
+    let textarea = document.querySelector("#area");
+    textarea.innerHTML =textoarea;
+}
